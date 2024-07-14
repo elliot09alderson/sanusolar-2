@@ -1,16 +1,15 @@
-import React from 'react'
+import React from "react";
 // import Nav from './pages/Nav'
-import Home from './pages/Home'
-import About from './pages/About'
-import Team from './pages/Team'
-import ContactUs from './pages/ContactUs'
-import Greencard from './pages/Greencard'
-import Clients from './pages/Clients'
-import Services from './pages/Services'
-import Para from './pages/Para'
-import Footer from './pages/Footer'
-
-
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Team from "./pages/Team";
+import ContactUs from "./pages/ContactUs";
+import Greencard from "./pages/Greencard";
+import Clients from "./pages/Clients";
+import Services from "./pages/Services";
+import Para from "./pages/Para";
+import Footer from "./pages/Footer";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -24,10 +23,11 @@ function App() {
       <Greencard />
       <Para />
       <Services />
+      <Products />
 
       <Footer />
     </div>
   );
 }
 
-export default App
+export default App;

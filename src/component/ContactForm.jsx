@@ -47,7 +47,7 @@ const ContactForm = () => {
                 name="name"
                 type="text"
                 placeholder="Name"
-                className="w-full p-4 border bg-transparent border-gray-700 rounded focus:border-orange-500 text-white"
+                className="w-64 p-4 border bg-transparent border-gray-700 rounded focus:border-orange-500 text-white"
               />
               <ErrorMessage name="name">
                 {(msg) =>
@@ -75,7 +75,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="flex justify-between gap-8">
+          <div className="flex flex-col lg:flex-col justify-between gap-8">
             <div className=" w-full">
               <Field
                 name="phone"
@@ -96,12 +96,24 @@ const ContactForm = () => {
               <Field
                 name="subject"
                 as="select"
-                className="w-full p-4 border bg-transparent border-gray-700 rounded focus:border-orange-500 text-white"
+                className="w-full p-4 border hover: bg-transparent border-gray-700 rounded focus:border-orange-500 text-white"
               >
-                <option value="" label="Select subject" />
-                <option value="general" label="General Inquiry" />
-                <option value="support" label="Support" />
-                <option value="feedback" label="Feedback" />
+                <option
+                  value=""
+                  label="Select subject"
+                  className="bg-slate-800"
+                >
+                  Select subject
+                </option>
+                <option value="general" className="bg-slate-800">
+                  General Inquiry
+                </option>
+                <option value="support" className="bg-slate-800">
+                  Support
+                </option>
+                <option value="feedback" className="bg-slate-800">
+                  Feedback
+                </option>
               </Field>
               <ErrorMessage name="subject">
                 {(msg) =>
@@ -133,7 +145,7 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full p-6 bg-orange-500 text-white rounded hover:bg-orange-600"
+              className="w-full  bg-orange-500 text-white rounded h-12 hover:bg-orange-600"
             >
               Submit
             </button>

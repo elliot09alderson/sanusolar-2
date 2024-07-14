@@ -1,7 +1,6 @@
-import React from 'react'
-import bulb from '/img-container/bulb-solar.png'
+import React from "react";
+import bulb from "/img-container/bulb-solar.png";
 import { AiOutlineRightCircle } from "react-icons/ai";
-
 
 function GreenCard() {
   return (
@@ -16,7 +15,10 @@ function GreenCard() {
           </h1>
 
           <dir className="flex items-center gap-2 text font-bold py-4 px-10 bg-orange-500 rounded-full">
-            <button>Contact Us</button>
+            <button>
+              {" "}
+              <a href="tel:+91 6266346017">Contact Us</a>
+            </button>
             <AiOutlineRightCircle size={30} />
           </dir>
         </div>
@@ -29,4 +31,4 @@ function GreenCard() {
   );
 }
 
-export default GreenCard
+export default GreenCard;

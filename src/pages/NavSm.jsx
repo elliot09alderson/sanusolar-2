@@ -46,7 +46,7 @@ function NavSm() {
         >
           {["Home", "about", "contact us", "address", "services"].map(
             (item, idx) => (
-              <h1 className="text-lg   capitalize cursor-pointer px-4 py-2 hover:tracking-widest hover:text-2xl hover:overline duration-500">
+              <h1 className="text-lg  select-none capitalize cursor-pointer px-4 py-2 hover:tracking-widest hover:text-2xl hover:overline duration-500">
                 {item}
               </h1>
             )
